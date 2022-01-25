@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "redis-proxy.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "redis-proxy.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    helm.sh/chart: {{ include "redis-proxy.chart" . }}
+spec:
+  sessionAffinity: {{ .Values.sessionAffinity }}
+  ports:
+    - port: {{ .Values.source.address.port }}
+      targetPort: redis-port
+      protocol: TCP
+      name: redis-port
+  selector:
+    app.kubernetes.io/name: {{ include "redis-proxy.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}

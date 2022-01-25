@@ -1,0 +1,45 @@
+image:
+  repository: alpine/socat
+  tag: 1.7.4.2-r0
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+# Additional deployment labels (e.g. for filtering deployment by custom labels)
+labels: {
+  app.kubernetes.io/app: redis-proxy
+}
+
+# Additional daemonset annotations
+annotations: {}
+
+# Additional pod annotations
+podAnnotations: {}
+
+resources: {}
+  # requests:
+  #   cpu: "50m"
+  #   memory: "50Mi"
+  # limits:
+  #   cpu: "50m"
+  #   memory: "100Mi"
+
+source:
+  address:
+    type: TCP-LISTEN
+    port: 6379
+    options:
+      - fork
+      - reuseaddr
+
+destination:
+  address:
+    type: OPENSSL
+    host: myhost
+    port: 6379
+    options:
+
+sessionAffinity: None # ClientIP
+
+

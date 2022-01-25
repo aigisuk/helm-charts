@@ -1,0 +1,19 @@
+apiVersion: v2
+name: redis-proxy
+description: A redis proxy daemonset built on the SOCAT relay
+type: application
+version: 0.1.0
+appVersion: "1.7.4.2-r0"
+keywords:
+  - redis
+  - socat
+  - proxy
+  - tuneller
+  - relay
+home: http://www.dest-unreach.org/socat/
+sources:
+  - https://github.com/aigisuk/redis-proxy-helm-chart
+maintainers:
+  - name: colinwilson
+    email: colin@aigis.uk
+icon: https://user-images.githubusercontent.com/12916656/150722001-d15c2707-6caa-4a68-9581-5f0ad717a6e0.png
