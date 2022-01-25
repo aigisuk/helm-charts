@@ -1,5 +1,5 @@
 image:
-  repository: alpine/socat
+  repository: aigis/socat
   tag: 1.7.4.2-r0
   pullPolicy: IfNotPresent
 
