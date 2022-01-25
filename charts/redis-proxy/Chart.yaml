@@ -12,8 +12,8 @@ keywords:
   - relay
 home: http://www.dest-unreach.org/socat/
 sources:
-  - https://github.com/aigisuk/redis-proxy-helm-chart
+  - https://github.com/aigisuk/helm-charts/charts/redis-proxy
 maintainers:
   - name: colinwilson
     email: colin@aigis.uk
-icon: https://user-images.githubusercontent.com/12916656/150722001-d15c2707-6caa-4a68-9581-5f0ad717a6e0.png
+icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
