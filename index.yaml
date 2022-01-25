@@ -3,6 +3,29 @@ entries:
   redis-proxy:
   - apiVersion: v2
     appVersion: 1.7.4.2-r0
+    created: "2022-01-25T22:42:05.066871474Z"
+    description: A redis proxy daemonset built on the SOCAT relay
+    digest: 859549ced1bcab21d92045e78e9b84fcabfff8895e6f900bdec9961ede515935
+    home: http://www.dest-unreach.org/socat/
+    icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
+    keywords:
+    - redis
+    - socat
+    - proxy
+    - tuneller
+    - relay
+    maintainers:
+    - email: colin@aigis.uk
+      name: colinwilson
+    name: redis-proxy
+    sources:
+    - https://github.com/aigisuk/helm-charts/charts/redis-proxy
+    type: application
+    urls:
+    - https://github.com/aigisuk/helm-charts/releases/download/redis-proxy-0.1.1/redis-proxy-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.7.4.2-r0
     created: "2022-01-25T21:15:28.36226317Z"
     description: A redis proxy daemonset built on the SOCAT relay
     digest: f0b6a4d42d7c675b89b38e1a8bcbd9d3f34ca5b09443cd936eddcdb5a1e9cee7
@@ -24,4 +47,4 @@ entries:
     urls:
     - https://github.com/aigisuk/helm-charts/releases/download/redis-proxy-0.1.0/redis-proxy-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-25T21:15:28.36226897Z"
+generated: "2022-01-25T22:42:05.067418287Z"
