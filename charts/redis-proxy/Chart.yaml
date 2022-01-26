@@ -2,7 +2,7 @@ apiVersion: v2
 name: redis-proxy
 description: A lightweight redis proxy daemonset built on the SOCAT relay
 type: application
-version: 0.1.4
+version: 0.1.5
 appVersion: "1.7.4.2-r0"
 keywords:
   - redis
@@ -17,3 +17,7 @@ maintainers:
   - name: colinwilson
     email: colin@aigis.uk
 icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Add chart signing
