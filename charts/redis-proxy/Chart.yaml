@@ -1,8 +1,8 @@
 apiVersion: v2
 name: redis-proxy
-description: A redis proxy daemonset built on the SOCAT relay
+description: A lightweight redis proxy daemonset built on the SOCAT relay
 type: application
-version: 0.1.3
+version: 0.1.4
 appVersion: "1.7.4.2-r0"
 keywords:
   - redis
