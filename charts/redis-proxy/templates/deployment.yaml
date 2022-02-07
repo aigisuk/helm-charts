@@ -1,4 +1,4 @@
-{{- if and .Values.deployment.enabled (eq .Values.deployment.kind "DaemonSet") -}}
+{{- if and .Values.deployment.enabled (eq .Values.deployment.kind "Deployment") -}}
   {{- if gt (int .Values.deployment.replicas) 1 -}}
   {{- end -}}
   {{- if eq (default .Chart.AppVersion .Values.image.tag) "latest" }}
@@ -7,7 +7,7 @@
 
 ---
 apiVersion: apps/v1
-kind: DaemonSet
+kind: Deployment
 metadata:
   name: {{ include "redis-proxy.fullname" . }}
   labels:
@@ -23,6 +23,7 @@ metadata:
   {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
+  replicas: {{ default 1 .Values.deployment.replicas }}
   selector:
     matchLabels:
       app.kubernetes.io/name: {{ include "redis-proxy.name" . }}

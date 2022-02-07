@@ -1,22 +1,30 @@
+deployment:
+  enabled: true
+  # Can be either Deployment or DaemonSet
+  kind: Deployment
+  # Number of pods of the deployment (only applies when kind == Deployment)
+  replicas: 1
+  # Additional deployment labels (e.g. for filtering deployment by custom labels)
+  labels: {
+    app.kubernetes.io/app: redis-proxy
+  }
+  # Additional daemonset annotations
+  annotations: { }
+  # Additional pod annotations
+  podAnnotations: { }
+
 image:
   repository: aigis/socat
   tag: 1.7.4.2-r0
   pullPolicy: IfNotPresent
 
+# Chart name override
 nameOverride: ""
+
+# Fully qualified app name override
 fullnameOverride: ""
 
-# Additional deployment labels (e.g. for filtering deployment by custom labels)
-labels: {
-  app.kubernetes.io/app: redis-proxy
-}
-
-# Additional daemonset annotations
-annotations: {}
-
-# Additional pod annotations
-podAnnotations: {}
-
+# Pod resources
 resources: {}
   # requests:
   #   cpu: "50m"
@@ -40,6 +48,7 @@ destination:
     port: 6379
     options:
 
+# Service session affinity
 sessionAffinity: None # ClientIP
 
 
