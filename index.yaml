@@ -4,6 +4,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: added
+          description: Kubernetes 'Deployment' option
+        - kind: added
+          description: podTemplate template
+        - kind: changed
+          description: values.yaml format updated
+        - kind: changed
+          description: update chart-releaser action to v1.3.0
+      artifacthub.io/signKey: |-
+        fingerprint: D95929168B0539E14974FAEC413208AE127FE5D4
+        url: https://keybase.io/aigisuk/pgp_keys.asc
+    apiVersion: v2
+    appVersion: 1.7.4.2-r0
+    created: "2022-02-07T00:54:30.75190725Z"
+    description: A lightweight redis proxy daemonset built on the SOCAT relay
+    digest: e73259ff85cc31b03a1a802053055f9b52fc68d04217a30f7ced50f3c33bd830
+    home: http://www.dest-unreach.org/socat/
+    icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
+    keywords:
+    - redis
+    - socat
+    - proxy
+    - tuneller
+    - relay
+    maintainers:
+    - email: colin@aigis.uk
+      name: colinwilson
+    name: redis-proxy
+    sources:
+    - https://github.com/aigisuk/helm-charts/tree/release/charts/redis-proxy
+    type: application
+    urls:
+    - https://github.com/aigisuk/helm-charts/releases/download/redis-proxy-0.1.7/redis-proxy-0.1.7.tgz
+    version: 0.1.7
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
           description: Add key info
       artifacthub.io/signKey: |-
         fingerprint: D95929168B0539E14974FAEC413208AE127FE5D4
@@ -173,4 +209,4 @@ entries:
     urls:
     - https://github.com/aigisuk/helm-charts/releases/download/redis-proxy-0.1.0/redis-proxy-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-26T23:39:40.514083992Z"
+generated: "2022-02-07T00:54:30.75194395Z"
