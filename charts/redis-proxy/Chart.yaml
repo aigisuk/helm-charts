@@ -1,8 +1,8 @@
 apiVersion: v2
 name: redis-proxy
-description: A lightweight redis proxy daemonset built on the SOCAT relay
+description: A lightweight redis proxy deployment/daemonset built on the SOCAT relay
 type: application
-version: 0.1.7
+version: 0.1.8
 appVersion: "1.7.4.2-r0"
 keywords:
   - redis
@@ -19,14 +19,10 @@ maintainers:
 icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Kubernetes 'Deployment' option
-    - kind: added
-      description: podTemplate template
     - kind: changed
-      description: values.yaml format updated
-    - kind: changed
-      description: update chart-releaser action to v1.3.0
+      description: updated aigis/socat image to 3.15.3 (security fixes)
+    - kind: added
+      description: comments to values.yaml
   artifacthub.io/signKey: |
     fingerprint: D95929168B0539E14974FAEC413208AE127FE5D4
     url: https://keybase.io/aigisuk/pgp_keys.asc
