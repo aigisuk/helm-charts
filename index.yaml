@@ -273,4 +273,34 @@ entries:
     urls:
     - https://github.com/aigisuk/helm-charts/releases/download/redis-proxy-0.1.0/redis-proxy-0.1.0.tgz
     version: 0.1.0
-generated: "2022-04-29T16:31:09.088142148Z"
+  traefik:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: initial release (v2.7.0-rc2)
+      artifacthub.io/signKey: |-
+        fingerprint: D95929168B0539E14974FAEC413208AE127FE5D4
+        url: https://keybase.io/aigisuk/pgp_keys.asc
+    apiVersion: v2
+    appVersion: 2.7.0-rc2
+    created: "2022-05-05T23:31:23.372403671Z"
+    description: Latest release candidate of the Traefik based Kubernetes ingress
+      controller
+    digest: 003ec22f1005bc0cbe44309aa2dd712e631f168852c4be4b8cbd59b1c59c189e
+    home: https://traefik.io/
+    icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
+    keywords:
+    - traefik
+    - ingress
+    maintainers:
+    - email: colin@aigis.uk
+      name: colinwilson
+    name: traefik
+    sources:
+    - https://github.com/traefik/traefik
+    - https://github.com/aigisuk/helm-charts/tree/release/charts/traefik
+    type: application
+    urls:
+    - https://github.com/aigisuk/helm-charts/releases/download/traefik-0.1.0/traefik-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-05-05T23:31:23.372447171Z"
