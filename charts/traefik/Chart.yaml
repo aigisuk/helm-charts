@@ -2,7 +2,7 @@ apiVersion: v2
 name: traefik
 description: Latest release candidate of the Traefik based Kubernetes ingress controller
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: 2.7.0-rc2
 keywords:
   - traefik
@@ -17,8 +17,8 @@ maintainers:
 icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: initial release (v2.7.0-rc2)
+    - kind: changed
+      description: 📖 update readme
   artifacthub.io/signKey: |
     fingerprint: D95929168B0539E14974FAEC413208AE127FE5D4
     url: https://keybase.io/aigisuk/pgp_keys.asc

@@ -30,7 +30,7 @@ With the command `helm version`, make sure that you have:
 Add Traefik's chart repository to Helm:
 
 ```bash
-helm repo add traefik https://helm.traefik.io/traefik
+helm repo add aigisuk https://charts.aigis.io
 ```
 
 You can update the chart repository by running:
@@ -45,18 +45,17 @@ Due to changes in CRD version support, the following versions of the chart are u
 
 |                         |  Kubernetes v1.15 and below | Kubernetes v1.16-v1.21 | Kubernetes v1.22 and above |
 |-------------------------|-----------------------------|------------------------|----------------------------|
-| Chart v9.20.2 and below | [x]                         | [x]                    |                            |
-| Chart 10.0.0 and above  |                             | [x]                    | [x]                        |
+| Chart 0.1.0 and above   |                             | [x]                    | [x]                        |
 
 ### Deploying Traefik
 
 ```bash
-helm install traefik traefik/traefik
+helm install traefik aigisuk/traefik
 ```
 
 #### Warning
 
-Helm v2 support was removed in the chart version 10.0.0.
+Helm v2 is **not** supported
 
 ### Exposing the Traefik dashboard
 
