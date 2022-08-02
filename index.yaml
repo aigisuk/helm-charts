@@ -4,6 +4,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: update aigis/socat image to 3.16.1 (security fixes)
+        - kind: changed
+          description: update socat package to 1.7.4.3-r0
+      artifacthub.io/signKey: |-
+        fingerprint: D95929168B0539E14974FAEC413208AE127FE5D4
+        url: https://keybase.io/aigisuk/pgp_keys.asc
+    apiVersion: v2
+    appVersion: 1.7.4.3-r0
+    created: "2022-08-02T13:18:43.915734116Z"
+    description: A lightweight redis proxy deployment/daemonset built on the SOCAT
+      relay
+    digest: c0d6d07b12360352827c5f1ca1294f3a0609c11f2085cc993fa77dc0c1c9d515
+    home: http://www.dest-unreach.org/socat/
+    icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
+    keywords:
+    - redis
+    - socat
+    - proxy
+    - tuneller
+    - relay
+    maintainers:
+    - email: colin@aigis.uk
+      name: colinwilson
+    name: redis-proxy
+    sources:
+    - https://github.com/aigisuk/helm-charts/tree/release/charts/redis-proxy
+    type: application
+    urls:
+    - https://github.com/aigisuk/helm-charts/releases/download/redis-proxy-0.2.0/redis-proxy-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: updated aigis/socat image to 3.15.4 (security fixes)
       artifacthub.io/signKey: |-
         fingerprint: D95929168B0539E14974FAEC413208AE127FE5D4
@@ -330,4 +363,4 @@ entries:
     urls:
     - https://github.com/aigisuk/helm-charts/releases/download/traefik-0.1.0/traefik-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-06T00:31:27.959967929Z"
+generated: "2022-08-02T13:18:43.915787115Z"
