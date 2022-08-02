@@ -15,7 +15,7 @@ deployment:
 
 image:
   repository: aigis/socat
-  tag: 1.7.4.2-r0
+  tag: 1.7.4.3-r0
   pullPolicy: IfNotPresent
 
 # Chart name override
