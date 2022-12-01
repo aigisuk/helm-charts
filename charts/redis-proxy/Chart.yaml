@@ -2,7 +2,7 @@ apiVersion: v2
 name: redis-proxy
 description: A lightweight redis proxy deployment/daemonset built on the SOCAT relay
 type: application
-version: 0.2.2
+version: 0.2.3
 appVersion: "1.7.4.4-r0"
 keywords:
   - redis
@@ -19,8 +19,6 @@ maintainers:
 icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: update aigis/socat image to 3.17.0 (security fixes)
     - kind: changed
       description: update socat package to 1.7.4.4-r0 in values.yaml
   artifacthub.io/signKey: |
