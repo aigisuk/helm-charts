@@ -401,6 +401,17 @@ entries:
     urls:
     - https://github.com/aigisuk/helm-charts/releases/download/redis-proxy-0.1.0/redis-proxy-0.1.0.tgz
     version: 0.1.0
+  supabase:
+  - apiVersion: v2
+    created: "2023-03-13T13:08:51.036687371Z"
+    description: The open source Firebase alternative.
+    digest: 935302ac0c9e80330932b7a4f9844e9e7a1a1200d326b7ba288e0f99ea9f09b3
+    icon: https://user-images.githubusercontent.com/12916656/151071311-a483f8f9-2c86-4edc-8557-1f95cd112ab9.png
+    name: supabase
+    type: application
+    urls:
+    - https://github.com/aigisuk/helm-charts/releases/download/supabase-0.0.3/supabase-0.0.3.tgz
+    version: 0.0.3
   traefik:
   - annotations:
       artifacthub.io/changes: "- kind: changed\n  description: \U0001F4D6 update readme\n"
@@ -458,4 +469,4 @@ entries:
     urls:
     - https://github.com/aigisuk/helm-charts/releases/download/traefik-0.1.0/traefik-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-01T00:59:50.921523305Z"
+generated: "2023-03-13T13:08:51.036741971Z"
